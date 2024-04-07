@@ -41,3 +41,6 @@ El cliente enviará las siglas de las monedas al servidor y recibirá el valor d
 ## Código
 
 El código del proyecto se encuentra en los archivos `smain.c` (servidor) y `cmain.c` (cliente).
+
+## Integrante
+- Victor Manuel Palmero Valdes

@@ -21,7 +21,11 @@ int main() {
     server_address.sin_family = AF_INET;
     server_address.sin_port = htons(PORT);
 
-    if(inet_pton(AF_INET, "127.0.0.1", &server_address.sin_addr) <= 0) {
+    char address_ip[16];
+    printf("Ingrese la dirección ip del servidor: ");
+    scanf("%s", address_ip);
+
+    if(inet_pton(AF_INET, address_ip, &server_address.sin_addr) <= 0) {
         perror("fallo convirtiendo la ip a binario");
         exit(EXIT_FAILURE);
     }
